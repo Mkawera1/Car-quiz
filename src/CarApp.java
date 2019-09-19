@@ -38,8 +38,8 @@ public class CarApp {
     }
     //make method that displays everything
     public String displayEverything(){
-        String displayEverything = "";
-        displayEverything = "Make: " + getMake() + "\nModel: " + getModel() + "\nYear: " + getYear();
-        return displayEverything;
+        String display = "";
+        display = "Make: " + getMake() + "\nModel: " + getModel() + "\nYear: " + getYear();
+        return display;
     }
 }

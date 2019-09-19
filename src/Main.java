@@ -1,8 +1,10 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        ArrayList<CarApp> cars = new ArrayList<>();
 
         // create an instance or object of a car
         CarApp carOne = new CarApp();
@@ -26,8 +28,17 @@ public class Main {
         year = sc.nextInt();//nextInt is for integers
         carOne.setYear(year);
 
-String result = carOne.displayEverything();
-        System.out.println(result);
+
+        System.out.println(carOne.displayEverything());
+        //or System.out.println(carOne.displayEverything());
+        //add car instance or object into an arrayList called cars
+        cars.add(carOne);
+        int counter = 1;
+        for(CarApp car:cars){
+            System.out.println("This is your car " + counter);
+            System.out.println(carOne.displayEverything());
+            counter = counter + 1;
+        }
     }
 
 }
